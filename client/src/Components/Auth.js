@@ -99,7 +99,7 @@ function Auth() {
               <h2 className="fs-5 fw-bold mb-3">Or use a third-party</h2>
               
               <GoogleLogin
-                clientId='1057531342956-ad2m9tggojfikg3i8og176q49ll6cu7a.apps.googleusercontent.com'
+                clientId=process.env.GOOGLE_CLIENT_ID
                 render={(renderProps)=> 
                 <>
                   <button className="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" onClick={renderProps.onClick} disabled={renderProps.disabled}>
